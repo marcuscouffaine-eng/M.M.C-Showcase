@@ -1,0 +1,47 @@
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" />
+        <title>Coalition Showcase Generator</title>
+        <script src="script.js" type="text/javascript" defer></script>
+    </head>
+    <body>
+        <div class="heading">
+            <img src="coalseal.png" class="heading__image" />
+            <h1 class="heading__title">COALITION SHOWCASE MAKER</h1>
+            <h3 class="heading__subtitle">Generate showcases automatically.</h3>
+        </div>
+        <p class="note">
+            NOTE: Because this website is hosted on Github, I can't make it download the image
+            automatically, so you will have to
+            <strong>manually right click it and then "save as".</strong>
+            <br>
+            To fill out the color field to showcase tattoos, type in rgb(r, g, b).
+            <br>
+            <strong>Example Generic Skin: rgb(198,179,163)</strong>
+            <br><small>Credit to the original USRFShowcase Github.</small>
+        </p>
+        <canvas class="display" width="700" height="373"></canvas>
+        <div class="settings">
+            <div class="setting">
+                <p class="setting__display" settingDisplay setting="shirt">Shirt:</p>
+                <button class="setting__button" uploadButton setting="shirt">Upload</button>
+            </div>
+            <div class="setting">
+                <p class="setting__display" settingDisplay setting="pants">Pants:</p>
+                <button class="setting__button" uploadButton setting="pants">Upload</button>
+            </div>
+            <div class="setting">
+                <p class="setting__display" settingDisplay>Color:</p>
+                <input type="text" class="setting__text-input" colorInput />
+            </div>
+            <button class="setting__button" generateButton>Generate</button>
+        </div>
+    </body>
+</html>
