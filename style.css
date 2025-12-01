@@ -2,8 +2,8 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: "Source Code Pro", sans-serif;
-	color: #FFFFFF;
+	font-family: "Courier New", monospace;
+	color: #282822;
 }
 
 body, html {
@@ -20,7 +20,14 @@ body {
 
 input[type="file"] {
 	display: none;
-  
+}
+
+.heading {
+	place-self: center;
+	grid-column: 1 / span 3;
+	grid-row: 1;
+	text-align: center;
+	
 }
 
 .heading__image {
@@ -40,7 +47,7 @@ input[type="file"] {
 canvas {
 	grid-column: 2;
 	grid-row: 2;
-	border: 1px solid #FFFFFF;
+	border: 1px solid #282822;
 }
 
 .note {
@@ -66,7 +73,7 @@ canvas {
 	padding-inline: 0.5rem;
 	padding-block: 0.25rem;
 	background-color: transparent;
-	border: 1px solid #FFFFFF;
+	border: 1px solid #282822;
 	cursor: pointer;
 }
 
@@ -81,7 +88,7 @@ canvas {
 
 .setting__button:hover {
 	background-color: #00F85E;
-	color: #FFFFFF;
+	color: #282822;
 }
 
 .setting__text-input {
@@ -89,7 +96,7 @@ canvas {
 	width: 100%;
 	background-color: transparent;
 	border-style: unset;
-	border-bottom: 1px solid #FFFFFF;
+	border-bottom: 1px solid #282822;
 }
 
 .setting__text-input:focus {
