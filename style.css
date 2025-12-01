@@ -31,7 +31,7 @@ input[type="file"] {
 }
 
 .heading__image {
-	max-width: 40%;
+	max-width: 20%;
 	filter: drop-shadow(0px 0px 100px #000000);
 }
 
